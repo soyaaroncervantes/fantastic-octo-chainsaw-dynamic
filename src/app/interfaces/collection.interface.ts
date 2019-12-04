@@ -1,3 +1,3 @@
-export interface DynamicComponentInterface<T> {
+export interface CollectionInterface<T> {
   [id: string]: T;
 }
