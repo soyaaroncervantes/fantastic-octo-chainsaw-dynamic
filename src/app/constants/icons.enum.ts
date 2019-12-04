@@ -1,4 +1,4 @@
-export enum Icons {
+export enum IconsEnum {
   android,
   angular,
   polymer,
