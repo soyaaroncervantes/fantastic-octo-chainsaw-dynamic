@@ -2,7 +2,7 @@ import {Type} from '@angular/core';
 
 import {IconsEnum} from '../constants/icons.enum';
 
-import {DynamicComponentInterface} from '../interfaces/dynamic-component.interface';
+import {CollectionInterface} from '../interfaces/collection.interface';
 
 import {AndroidIconComponent} from '../components/icons/android/android-icon.component';
 import {IconBaseComponent} from '../components/icons/base/icon-base.component';
@@ -14,7 +14,7 @@ import {PolymerIconComponent} from '../components/icons/polymer/polymer-icon.com
 
 export class IconsCollectionClass {
 
-  private readonly iconsCollection: DynamicComponentInterface<Type<IconBaseComponent>>;
+  private readonly iconsCollection: CollectionInterface<Type<IconBaseComponent>>;
 
   constructor() {
     this.iconsCollection = {};
@@ -26,7 +26,7 @@ export class IconsCollectionClass {
     this.iconsCollection[ IconsEnum.polymer ] = PolymerIconComponent;
   }
 
-  get collection(): DynamicComponentInterface<Type<IconBaseComponent>> {
+  get collection(): CollectionInterface<Type<IconBaseComponent>> {
     return this.iconsCollection;
   }
 
