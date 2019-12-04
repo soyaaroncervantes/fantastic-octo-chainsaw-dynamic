@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.fill-primary {
+  fill: var(--blue);
+}
+
+.fill-secondary {
+  fill: var(--gray);
+}
+
+.fill-success {
+  fill: var(--green);
+}
+
+.fill-danger {
+  fill: var(--red);
+}
+
+.fill-warning {
+  fill: var(--yellow);
+}
+
+.fill-info {
+  fill: var(--cyan);
+}
+
+.fill-indigo {
+  fill: var(--indigo);
+}
